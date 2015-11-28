@@ -16,7 +16,7 @@ const getFilePath = (dir, f) => path.join(dir, f);
 export function runTests({ directory }) {
   fs.readdir(path.join(process.cwd(), directory), (err, files) => {
     const testFiles = files.filter(fileIsTest).map(getFilePath.bind(null, directory));
-    const testFilePromises = testFiles.map(System.import);
+    const testFilePromises = testFiles.map((f) => System.import(f));
 
     Promise.all(testFilePromises).then(() => {
       const results = assertions.map(({ name, fn }) => {
