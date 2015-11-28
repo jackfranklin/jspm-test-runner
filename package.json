@@ -1,0 +1,13 @@
+{
+  "name": "jspm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "runner.js",
+  "format": "es6",
+  "registry": "jspm",
+  "dependencies": {
+    "chalk": "npm:chalk@^1.1.1",
+    "fs": "github:jspm/nodelibs-fs@^0.1.2",
+    "path": "github:jspm/nodelibs-path@^0.1.0"
+  }
+}
