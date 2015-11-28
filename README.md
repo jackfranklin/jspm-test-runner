@@ -35,3 +35,12 @@ runTests({ directory: 'tests' });
 
 Now doing `jspm run test-runner` will execute your tests and show you the result.
 
+## Todo
+- tidy up test output and make it more readable
+- ability to only run one test at any one time (good for debugging)
+- ability to only run one file at any one time
+- show which file each test came from in the output
+- show summary at the bottom (X passed, X failed)
+- expose data optionally in JSON format so it can be worked with
+- allow pending tests
+- `before` and `after` to run before/after each spec
